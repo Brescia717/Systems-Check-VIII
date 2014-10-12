@@ -38,3 +38,17 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'foundation-rails'
+gem "font-awesome-rails"
+gem 'kaminari'
+
+group :development, :test do
+  gem 'valid_attribute'
+  gem 'shoulda-matchers'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'factory_girl_rails'
+  gem "nyan-cat-formatter"
+end
