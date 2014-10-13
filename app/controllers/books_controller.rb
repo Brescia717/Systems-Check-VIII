@@ -19,12 +19,6 @@ class BooksController < ApplicationController
     end
   end
 
-  def edit
-  end
-
-  def destroy
-  end
-
   def show
     @book = Book.find(params[:id])
     @review = Review.new
