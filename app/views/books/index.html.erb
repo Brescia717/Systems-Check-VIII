@@ -1,0 +1,14 @@
+<div class="row information">
+
+  <h1>List of All Books</h1>
+
+  <ul>
+    <% @books.each do |book| %>
+      <li><%= link_to book.title, book_path(book.id) %><br>
+          <%= "#{book.author}, #{book.year}" %><br>
+          <%= "#{book.category}" %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to "Add a Book", new_book_path, class: "button" %>
+</div>
